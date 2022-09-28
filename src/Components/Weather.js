@@ -66,7 +66,7 @@ const Weather = (props) => {
 
     const getIcon = () => {
         const iconID = props.array.weather[0].icon;
-        return `http://openweathermap.org/img/w/${iconID}.png`;
+        return `https://openweathermap.org/img/w/${iconID}.png`;
     }
 
     console.log(getIcon())
