@@ -76,7 +76,7 @@ const Weather = (props) => {
                 <h2>{ getLocation() }</h2>
                 <img src={ getIcon() } alt="" />
             </div>
-           <p>{ getWeather() }</p>
+           <p className="weather-p">{ getWeather() }</p>
            <div className="temps">
             <div className="temp-main">
                 <p>Temperature: { convertTempsToCelsius()[0] }C</p>
@@ -87,7 +87,7 @@ const Weather = (props) => {
                 <p>Minimum Temperature: { convertTempsToCelsius()[2] }C</p>
             </div>
            </div>
-           <p>Humidity: { getHumidity() }</p>
+           <p className="humidity-p">Humidity: { getHumidity() }</p>
            
            
            

@@ -103,9 +103,18 @@ code {
 
 .weather-header {
   display: flex;
-  background-color: #FFFFFF;
-  background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 
+  padding: 15px 20px 15px 20px;
+  border-radius: 20px;
+}
+
+.weather-p {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid black;
 }
 
 .temps {
@@ -114,6 +123,8 @@ code {
   justify-content: center;
   gap: 35px;
   align-items: center;
+  border-bottom: 1px solid black;
+  padding: 5px;
 }
 
 .sundata {
@@ -125,10 +136,18 @@ code {
   font-style: italic;
 }
 
-.temps-max, .temps-min {
+.temps-main, .temps-min {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid black;
+  padding: 5px;
 }
 
-
+.humidity-p {
+  border-bottom: 1px solid black;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
