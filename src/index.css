@@ -37,6 +37,7 @@ code {
   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
   font-size: 10px;
   height: 60px;
+  width: 100%;
   
 }
 
@@ -102,6 +103,9 @@ code {
 
 .weather-header {
   display: flex;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+
 }
 
 .temps {
