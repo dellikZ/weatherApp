@@ -8,7 +8,7 @@ const Weather = (props) => {
         );
     }
 
-    console.log(props.array)
+
 
     const getLocation = () => {
         return `${props.array.name}, ${props.array.sys.country}`;
@@ -69,7 +69,6 @@ const Weather = (props) => {
         return `https://openweathermap.org/img/w/${iconID}.png`;
     }
 
-    console.log(getIcon())
 
     return (
         <div className="weather-div">
