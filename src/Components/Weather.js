@@ -1,12 +1,12 @@
 const Weather = (props) => {
 
-    if(props.array.cod === '404') {
-        return (
-            <div className="weather-div">
-                <h2>Invalid City Name</h2>
-            </div>
-        );
-    }
+    // if(props.array.cod === '404') {
+    //     return (
+    //         <div className="weather-div">
+    //             <h2>Invalid City Name</h2>
+    //         </div>
+    //     );
+    // }
 
 
 
