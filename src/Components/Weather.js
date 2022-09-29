@@ -41,7 +41,7 @@ const Weather = (props) => {
         const sunrise = props.array.sys.sunrise;
         const sunset = props.array.sys.sunset;
         const convertMs = (num) => {
-            const seconds = Math.floor((num / 1000) % 60);
+            
             const minutes = Math.floor((num / (1000 * 60)) % 60);
             const hours = Math.floor((num / (1000 * 60 * 60)) % 24);
 

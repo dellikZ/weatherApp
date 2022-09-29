@@ -10,6 +10,8 @@ const Content = () => {
     const [ state, setState ] = useState('London');
 
     const [ weatherData, setWeatherData ] = useState(null);
+
+    const [ isPending, setIsPending] = useState(true);
    
 
 
@@ -23,7 +25,11 @@ const Content = () => {
         .then(result => {
             return result.json();
         })
-        .then(data => setWeatherData(data))
+        .then((data) => { 
+                setWeatherData(data);
+                setIsPending(false);
+                }
+            )
         .catch(e => console.log(e))
         
     }, [state])
@@ -34,6 +40,9 @@ const Content = () => {
         <div className="content">
             <input type="text" placeholder="Enter a city name" />
             <button id='button' onClick={ handleClick }>Search</button>
+            { isPending && <div>
+                <p>Loading...</p>
+            </div> }
             { weatherData && < Weather array = { weatherData } /> }
         </div>
     );
